@@ -14,12 +14,12 @@ rows,cols = img.shape
 smoothed_angle = 0
 
 i = 0
-while(cv2.waitKey(10) != ord('q')):
-    full_image = scipy.misc.imread("driving_dataset/" + str(i) + ".jpg", mode="RGB")
+while((cv2.waitKey(10) & 0xFF) != ord('q')):
+    full_image = scipy.misc.imread("driving_dataset/" + str(i) + ".jpg", mode='RGB')
     image = scipy.misc.imresize(full_image[-150:], [66, 200]) / 255.0
     degrees = model.y.eval(feed_dict={model.x: [image], model.keep_prob: 1.0})[0][0] * 180.0 / scipy.pi
     call("clear")
-    print("Predicted steering angle: " + str(degrees) + " degrees")
+    print "Frame [%5d => %2d%%]: Predicted steering angle: %3.0f degrees" % (i, i*100.0/13602, degrees)
     cv2.imshow("frame", cv2.cvtColor(full_image, cv2.COLOR_RGB2BGR))
     #make smooth angle transitions by turning the steering wheel based on the difference of the current angle
     #and the predicted angle
