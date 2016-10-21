@@ -1,7 +1,9 @@
-# Problem Statement: 
-Compute Steering Angle for keeping a self-driving car in a lane, given a single camera image as input. Read more at [Udacity Challenge 2 Blog](https://medium.com/udacity/challenge-2-using-deep-learning-to-predict-steering-angles-f42004a36ff3#.bx1vjl4he)
+## Problem Statement
+Compute Steering Angle for keeping a self-driving car in a lane, given a single camera image as input. Read more at [Udacity Challenge 2 Blog](https://medium.com/udacity/challenge-2-using-deep-learning-to-predict-steering-angles-f42004a36ff3#.bx1vjl4he). 
 
-# Solution 
+Deadline: October 28, 2016
+
+## Solution 
 ## Nvidia-End-to-End Learning Deep Neural
 A TensorFlow implementation of this [Nvidia paper](https://arxiv.org/pdf/1604.07316.pdf) with some changes.
 
@@ -29,10 +31,10 @@ As of October 15:
   - [x] RMSE was too low
   - [x] Model was overfit
 - [ ] WIP: Filter training to kill low speed and steep steering angles
-- [ ] Prepare Training Data with Scene Augmentation for drift recovery training
-- [ ] Move Dev Environment to Cloud (Google / Amazon)
 - [ ] Improve Neural Network to overcome Observed Limitations
+- [ ] Prepare Training Data with Scene Augmentation for drift recovery training
 - [ ] Try Alternative ML methods if needed
+- [ ] Move Dev Environment to Cloud (Google / Amazon)
 
 ## Additional Resources
 [Udacity Dataset Torrents](http://academictorrents.com/browse.php?search=Udacity)
