@@ -3,8 +3,7 @@ Compute Steering Angle for keeping a self-driving car in a lane, given a single 
 
 Deadline: October 28, 2016
 
-## Solution 
-## Nvidia-End-to-End Learning Deep Neural
+## Nvidia-End-to-End Learning
 A TensorFlow implementation of this [Nvidia paper](https://arxiv.org/pdf/1604.07316.pdf) with some changes.
 
 ## How to Use
@@ -19,6 +18,9 @@ Use `python run_dataset.py` to run the model on the dataset
 
 ## Extration
   Use [Udacity ROS Reader](https://github.com/rwightman/udacity-driving-reader) repository to extract the dataset using Docker containers. 
+  
+## Evaluation
+Udacity Official: [Simulator](https://github.com/spicavigo/brahms) used for evaluation.
   
 ## Status
 
@@ -38,4 +40,3 @@ As of October 15:
 
 ## Additional Resources
 [Udacity Dataset Torrents](http://academictorrents.com/browse.php?search=Udacity)
-
