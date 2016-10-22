@@ -16,7 +16,7 @@ Use `python run_dataset.py` to run the model on the dataset
 ## Download Dataset 
   Download a [Udacity Dataset](https://github.com/udacity/self-driving-car) and extract into a (new) $REPO_ROOT/dataset folder
 
-## Extration
+## Extraction
   Use [Udacity ROS Reader](https://github.com/rwightman/udacity-driving-reader) repository to extract the dataset using Docker containers. 
   
 ## Evaluation
